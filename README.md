@@ -99,7 +99,7 @@ FastTLS includes a local context benchmark and a capability demo; network handsh
 
 ## Measured Benchmark Run
 
-The local benchmark completed **1,000 SSL context accesses in 402.17 ms** using the JDK provider with protocol `Default` during the verified run.
+The optimized local benchmark completed **1,000 SSL context accesses in 179.24 ms** using the JDK provider with protocol `Default`; the previous repeated default-context lookup measured **402.17 ms**, so context caching reduced this run by about **55%**.
 
 ```text
 run-benchmark.bat -> fasttls.TlsContextBenchmark
